@@ -13,7 +13,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ["https://senti-vrpj.onrender.com", "http://localhost:3000"]
+  origin: ["https://senti-chi.vercel.app", "http://localhost:3000"]
 }));
 app.use(express.json());
 
