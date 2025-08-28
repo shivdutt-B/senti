@@ -14,7 +14,7 @@ export function StoryActivity() {
   const [loading, setLoading] = useState(true);
   const [storybooks, setStorybooks] = useState<Storybook[]>([]);
   const [error, setError] = useState<string | null>(null);
-  const [hoveredBook, setHoveredBook] = useState<string | null>(null);
+  const [ , setHoveredBook] = useState<string | null>(null);
 
   useEffect(() => {
     fetchStorybooks();
