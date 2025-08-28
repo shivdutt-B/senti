@@ -12,7 +12,9 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: ["https://senti-vrpj.onrender.com", "http://localhost:3000"]
+}));
 app.use(express.json());
 
 // Add Heimdall ping endpoint
