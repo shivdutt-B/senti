@@ -1,0 +1,36 @@
+@import '@fontsource/baloo-2';
+@import '@fontsource/comic-neue';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Comic Neue', cursive;
+  }
+
+  h1, h2, h3, h4, h5, h6, .title-font {
+    font-family: 'Baloo 2', cursive;
+  }
+}
+
+.animate-bounce-custom {
+  animation: bounce 1s infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
